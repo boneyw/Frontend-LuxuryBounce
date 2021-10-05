@@ -1,6 +1,44 @@
-<h2>Welcome to Luxury Bounce Detroit Where we make the special feel magical</h2>
+<div class="wholepage">
+    <title>Luxary Bounce Detroit
 
-<p>Plesae borrow are bifferent invtory on bounce House and when you are ready to book PLease hit the book now  to start the process</p>
-<div class ="color">
-<Button type="button" class="btn btn-success btn-lg" >Book Now!!!</Button>
+    </title>
+
+    <body>
+        <h2>Welcome to Luxury Bounce Detroit Where we make the special feel magical</h2>
+
+        <p>Plesae borrow are bifferent invtory on bounce House and when you are ready to book PLease hit the book now to
+            start the process</p>
+
+        <form>
+
+            <label for="date ">The date of the event
+                <input type="date" formControlGroup="theDateOfEvent" class="form-control">
+            </label>
+            <br>
+            
+            <div *ngIf="isShown" id="divshow">
+                <br>
+                <label for="name">What is your name
+                    <input type="text" formControlGroup="name" class="form-control">
+                </label>
+                <br>
+
+                <label for=" address">The address of where the event is taking place
+                    <input type="address" formControlGroup="theDateOfEvent" class="form-control">
+                </label>
+                <br>
+
+                <label for="Type of event "> What type of event are you host on your special day
+                    <input type="text" formControlGroup="whatTypeOfEvent" class="form-control">
+                </label>
+                <br>
+
+            </div>
+
+        </form>
+
+        <Button type="button" (click)="showform()" class="btn btn-success btn-lg">Book Now!!!</Button>
+    </body>
+
+
 </div>

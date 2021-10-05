@@ -1,3 +1,12 @@
+.wholepage{ 
+    
+}
+body{
+    background-color: rgb(180, 171, 45) !important; 
+    color: blue;
+}
+
+
 .btn-success{
     background-color: gold;
     border-color: black;
